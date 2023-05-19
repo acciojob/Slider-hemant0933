@@ -5,17 +5,17 @@ import { Carousel } from 'react-responsive-carousel';
 
   return (
     <div className="App">
-      <div id='review-heading'>
-      <h1>Reviews</h1>
+      <div>
+         <h1 id="review-heading">Reviews</h1>
       <Carousel 
       showArrows={true}
       width="700px"
       infiniteLoop
       swipeable={true}
-       id='review-container' key={Math.random(100)*3}>
+        key={Math.random(100)*3}>
         {
             data.map((val,index)=>(
-               <div key={val.id} className="card">
+               <div id='review-container' key={val.id} className="card">
                 <div className="textInfo">
                   <p id={'person-'+index}>
                     Name :  {val.name}
