@@ -24,7 +24,7 @@ import { Carousel } from 'react-responsive-carousel';
                   <p>"<i>{val.quote}</i>"</p>
                 </div>
                 <div className="imgInfo">
-                  <img src={val.image} height={600}   alt='personImg'/>
+                  <img src={val.image} height={600} alt='personImg'/>
                 </div>
                </div>
             ))
